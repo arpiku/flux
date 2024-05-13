@@ -11,7 +11,10 @@
   imports = [
     ./sway
     ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.home-manager
   ];
+
+  home-manager.extraSpecialArgs = {inherit inputs outputs;};
 
   nixpkgs = {
     overlays = [
@@ -70,6 +73,11 @@
   boot.loader.efi.canTouchEfiVariables = true;
   #For TP-Link Bluetooth enabling
   boot.extraModulePackages = [config.boot.kernelPackages.rtl8821cu];
+
+  #Turning on the internet
+  networking.networkmanager.enable = true;
+  networking.nat.enable = true;
+  
   
   time.timeZone = "Asia/Kolkata";
   i18n.defaultLocale = "en_IN";
@@ -122,7 +130,7 @@
     coreutils-full
     networkmanager
     wirelesstools
-     
+    home-manager
   ];
 
   # Play with it to nuke your system!
