@@ -9,7 +9,6 @@
   ...
 }: {
   imports = [
-  ./sway
   ];
 
   nixpkgs = {

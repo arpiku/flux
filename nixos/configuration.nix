@@ -120,7 +120,7 @@
     wget
     jq
     coreutils-full
-    nmcli #For basic networking tasks
+    networkmanager
     iwconfig 
   ];
 
