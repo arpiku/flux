@@ -82,7 +82,7 @@
     LC_PAPER = "en_IN";
     LC_TELEPHONE = "en_IN";
     LC_TIME = "en_IN";
-  }    
+  };
 
   #xserver setup 
   services.xserver = {layout = "us"; xkbVariant = "";};
@@ -90,14 +90,14 @@
   #Sound Setup
   sound.enable = true;
   hardware.pulseaudio.enable = false;
-  security.rkit.enable = true;
 
-  service.pipewire = {
+
+  services.pipewire = {
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
-    pulse.audio = true;
-  }  
+    pulse.enable = true;
+  };
 
   #Fonts
   fonts.packages = with pkgs; [
@@ -110,7 +110,7 @@
   services.usbmuxd = {
     enable = true;
     package = pkgs.usbmuxd2;
-  }
+  };
 
   environment.systemPackages = with pkgs; [
     git
@@ -119,7 +119,7 @@
     wget
     jq
     coreutils-full
-  ]
+  ];
 
   # Play with it to nuke your system!
   system.stateVersion = "23.11";
