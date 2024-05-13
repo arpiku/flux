@@ -9,6 +9,18 @@
 
   services.gnome.gnome-keyring.enable = true;
 
+  services.greetd = {
+  enable = true;
+  settings = rec {
+    initial_session = {
+      command = "${pkgs.sway}/bin/sway";
+      user = "arpiku";
+    };
+    default_session = initial_session;
+  };
+};
+
+
   # enable sway window manager
   programs.sway = {
     enable = true;
@@ -25,6 +37,5 @@
     wlr.enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-wlr ];
   };
-  
   
 }
