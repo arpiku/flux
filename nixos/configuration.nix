@@ -121,7 +121,8 @@
     jq
     coreutils-full
     networkmanager
-    iwconfig 
+    wirelesstools
+     
   ];
 
   # Play with it to nuke your system!
