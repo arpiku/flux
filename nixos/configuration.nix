@@ -119,6 +119,7 @@
     wget
     jq
     coreutils-full
+    home-manager
   ];
 
   # Play with it to nuke your system!
