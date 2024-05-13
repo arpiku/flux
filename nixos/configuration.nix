@@ -9,6 +9,7 @@
   ...
 }: {
   imports = [
+    ./sway
     ./hardware-configuration.nix
   ];
 
@@ -119,7 +120,8 @@
     wget
     jq
     coreutils-full
-    home-manager
+    nmcli #For basic networking tasks
+    iwconfig 
   ];
 
   # Play with it to nuke your system!
