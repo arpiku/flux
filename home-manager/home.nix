@@ -44,8 +44,7 @@
   # services.xserver.displayManager.screensaver.command = "swaylock -f -c 000000";
 
   ##===========================================================================================
-  {
-    # Home-manager waybar config
+  # Home-manager waybar config
     programs.waybar = {
       enable = true;
       systemd = {
@@ -893,7 +892,6 @@
               }
       '';
     };
-  };
 
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
