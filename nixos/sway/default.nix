@@ -11,7 +11,8 @@
 
 
   services.xserver.enable = true;
-  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.sddm.enable = true;
 
   # enable sway window manager
   programs.sway = {
