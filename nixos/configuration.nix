@@ -96,6 +96,10 @@
   #xserver setup 
   services.xserver = {layout = "us"; xkbVariant = "";};
 
+  services.xserver.enable = true;
+  # services.xserver.displayManager.screensaver.enable = true;
+ 
+
   #Sound Setup
   sound.enable = true;
   hardware.pulseaudio.enable = false;
