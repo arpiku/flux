@@ -36,9 +36,7 @@
 
   systemd.user.startServices = "sd-switch";
 
-  services.xserver.enable = true;
-  services.xserver.displayManager.screensaver.enable = true;
-  services.xserver.displayManager.screensaver.command = "swaylock -f -c 000000";
+  # services.xserver.displayManager.screensaver.command = "swaylock -f -c 000000";
 
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
