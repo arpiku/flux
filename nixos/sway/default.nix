@@ -9,8 +9,9 @@
 
   services.gnome.gnome-keyring.enable = true;
 
+
   services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
 
   # enable sway window manager
   programs.sway = {

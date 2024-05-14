@@ -135,8 +135,10 @@
     networkmanager
     wirelesstools
     home-manager
+    lightlocker
   ];
 
   # Play with it to nuke your system!
   system.stateVersion = "23.11";
 }
+
