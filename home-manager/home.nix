@@ -35,7 +35,6 @@
     username = "arpiku";
     homeDirectory = "/home/arpiku";
   };
-  home.file."./.config/waybar/config".source = ./swaybar.conf;
 
 
   programs.home-manager.enable = true;
