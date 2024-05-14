@@ -18,7 +18,7 @@
     waybar
   ];
 
-  programs.enable.waybar = true;
+  programs.waybar.enable = true;
 
   
   nixpkgs = {
