@@ -18,7 +18,7 @@
   services.xserver.enable = true;
   services.xserver.libinput.enable = true;
   services.xserver.displayManager.defaultSession = "sway"; #default value for DM
-  services.xserver.displayManager.gdm.wayland.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
 
   # enable sway window manager
   programs.xwayland.enable = true;
