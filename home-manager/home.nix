@@ -18,6 +18,8 @@
     waybar
   ];
 
+  programs.enable.waybar = true;
+
   
   nixpkgs = {
     overlays = [
