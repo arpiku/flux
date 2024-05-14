@@ -8,7 +8,6 @@
   pkgs,
   ...
 }: {
-  useGlobalPkgs = true;
 
   imports = [
   ];

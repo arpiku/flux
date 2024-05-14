@@ -97,7 +97,6 @@
   services.xserver = {layout = "us"; xkbVariant = "";};
 
   services.xserver.enable = true;
-  # services.xserver.displayManager.screensaver.enable = true;
  
 
   #Sound Setup
@@ -126,6 +125,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    libinput
     git
     vim
     curl

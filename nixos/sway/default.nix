@@ -9,6 +9,7 @@
 
   services.gnome.gnome-keyring.enable = true;
 
+  services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
 
   # enable sway window manager
@@ -16,6 +17,8 @@
     enable = true;
     wrapperFeatures.gtk = true;
   };
+
+  programs.waybar.enable = true;
 
   programs = {
     dconf.enable = true;
